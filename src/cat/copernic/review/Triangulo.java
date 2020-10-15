@@ -16,13 +16,19 @@ public class Triangulo {
     private double altura;
     
     //Constructor
-    public Triangulo(double base, double altura) {
+    public Triangulo(double base, double altura) throws Exception {
+        if(base<=0 || altura<=0){ 
         this.base = base;
         this.altura = altura;
+            throw new Exception ("La base no pot ser negativa, i l'altura tampoc");
+        }
     }
     
     //Getters/Setters
-    public double getBase() {
+    public double getBase() throws Exception {
+        if(base<=0){
+             throw new Exception ("La base ha de ser positiva" +base);
+        }
         return base;
     }
 
@@ -30,7 +36,10 @@ public class Triangulo {
         this.base = base;
     }
 
-    public double getAltura() {
+    public double getAltura() throws Exception {
+         if(base<=0){
+             throw new Exception ("L'altura ha de ser positiva" +altura);
+        }
         return altura;
     }
 
@@ -56,10 +65,10 @@ public class Triangulo {
     }
    
      public double Hipotenusa(){
-        return Math.sqrt(base/2 + altura*altura);
+        return Math.sqrt(base/2*base/2 + altura*altura);
      }
     
-     public static void main(String[] args) {
+     public static void main(String[] args) throws Exception {
         Triangulo triangulo = new Triangulo(19.0, 17.0);
          System.out.println(triangulo.Area());
          System.out.println(triangulo.Perimetre());
