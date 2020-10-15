@@ -20,14 +20,14 @@ public class Triangulo {
         if(base<=0 || altura<=0){ 
         this.base = base;
         this.altura = altura;
-            throw new Exception ("La base no pot ser negativa, i l'altura tampoc. Base:" +base+ ", altura" + altura);
+            throw new ParametroNoPositivoException("La base no pot ser negativa, i l'altura tampoc. Base:" +base+ ", altura" + altura);
         }
     }
     
     //Getters/Setters
     public double getBase() throws Exception {
         if(base<=0){
-             throw new Exception ("La base ha de ser positiva" +base);
+             throw new ParametroNoPositivoException ("La base ha de ser positiva" +base);
         }
         return base;
     }
@@ -38,7 +38,7 @@ public class Triangulo {
 
     public double getAltura() throws Exception {
          if(base<=0){
-             throw new Exception ("L'altura ha de ser positiva" +altura);
+             throw new ParametroNoPositivoException ("L'altura ha de ser positiva" +altura);
         }
         return altura;
     }
