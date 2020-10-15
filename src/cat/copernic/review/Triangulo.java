@@ -20,7 +20,7 @@ public class Triangulo {
         if(base<=0 || altura<=0){ 
         this.base = base;
         this.altura = altura;
-            throw new Exception ("La base no pot ser negativa, i l'altura tampoc");
+            throw new Exception ("La base no pot ser negativa, i l'altura tampoc. Base:" +base+ ", altura" + altura);
         }
     }
     
