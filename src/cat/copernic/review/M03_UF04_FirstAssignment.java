@@ -19,8 +19,14 @@ public class M03_UF04_FirstAssignment {
         Barco barco2 = new Portaviones(35, new Motor(456), 250, 75, 46, 60000, 7);
         barco2.arranca();
         
-        Barco buque1 = new PortaContenedores(450, 1, new Motor(546), 400, 59, 25, 14);
+        Barco buque1 = new PortaContenedores(450, "Contenedores", new Motor(546), 400, 59, 25, 14);
         buque1.arranca();
+        
+        Barco buque2 = new BuquePetrolero(2000000, "Derivados del petróleo", new Motor(645), 458, 48, 12, 158);
+        buque2.arranca();
+        
+        Barco buque3 = new BuqueQuimico(250000, 6, "Fenol, Hidróxido de sodio, Metanol, Ácido sulfúrico, Ácido nítrico y Tolueno" , "Productor químicos", new Motor(780), 150, 92.86, 25, 14);
+        buque3.arranca();
         
         System.out.println(barco1 instanceof Portaviones);
        /* // Prueba to código aquí
