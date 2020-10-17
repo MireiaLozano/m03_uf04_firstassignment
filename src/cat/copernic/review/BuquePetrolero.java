@@ -15,12 +15,10 @@ import java.util.Scanner;
  */
 public class BuquePetrolero extends BarcoDeMercancias{
         private int numeroBarriles;
-        private int litrosPetroleo;
-
-    public BuquePetrolero(int numeroBarriles, int litrosPetroleo, int tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
+        
+    public BuquePetrolero(int numeroBarriles, int tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
         super(tiposMercancias, motor, eslora, manga, nudos, peso);
         this.numeroBarriles = numeroBarriles;
-        this.litrosPetroleo = litrosPetroleo;
     }
      
     @Override
