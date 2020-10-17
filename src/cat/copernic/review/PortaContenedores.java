@@ -16,14 +16,14 @@ import java.util.Scanner;
 public class PortaContenedores extends BarcoDeMercancias {
     private int numeroContenedores;
 
-    public PortaContenedores(int numeroContenedores, int tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
+    public PortaContenedores(int numeroContenedores, String tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
         super(tiposMercancias, motor, eslora, manga, nudos, peso);
         this.numeroContenedores = numeroContenedores;
     }
     
     @Override
     public void arranca(){
-        System.out.println("Arrancando barco porta conenedores");
+        System.out.println("Arrancando barco porta contenedores");
     }
     
     @Override
