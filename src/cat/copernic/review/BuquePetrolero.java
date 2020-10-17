@@ -22,12 +22,23 @@ public class BuquePetrolero extends BarcoDeMercancias{
         this.numeroBarriles = numeroBarriles;
         this.litrosPetroleo = litrosPetroleo;
     }
-        
+     
+    @Override
      public void arranca(){
          System.out.println("Arrancando buque de petroleo");
      }
      
+     @Override
      public void atraca(){
          System.out.println("Atracando buque de petroleo");
      }
+     
+     public void abandonenElBarco(){
+         System.out.println("Abandonen rápidamente el barco");
+     }
+     
+     public void comportamiento(){
+         System.out.println("Defiendan los barriles, nos roban!");
+     }
+     
 }
