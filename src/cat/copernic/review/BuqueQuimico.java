@@ -36,7 +36,7 @@ public class BuqueQuimico extends BarcoDeMercancias {
     }
     
     public void abandonenElBarco(){
-        System.out.println("Hay un incdencio y la mercancía es frágil, todos fuera!");
+        System.out.println("Hay un incendio y la mercancía es frágil, todos fuera!");
     }
     
     public void comportamiento(){
