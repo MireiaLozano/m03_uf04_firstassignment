@@ -14,7 +14,13 @@ public class M03_UF04_FirstAssignment {
      */
     public static void main(String[] args) {
         Barco barco1 = new Yate(true, 4, 6, new Motor(345), 20.0, 12.5, 23, 71);
+        barco1.arranca();
+        
         Barco barco2 = new Portaviones(35, new Motor(456), 250, 75, 46, 60000, 7);
+        barco2.arranca();
+        
+        Barco buque1 = new PortaContenedores(450, 1, new Motor(546), 400, 59, 25, 14);
+        buque1.arranca();
         
         System.out.println(barco1 instanceof Portaviones);
        /* // Prueba to código aquí
