@@ -14,9 +14,9 @@ import java.util.Scanner;
  * @author User
  */
 public abstract class BarcoDeMercancias extends Barco {
-        private int tiposMercancias;
+        private String tiposMercancias;
 
-    public BarcoDeMercancias(int tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
+    public BarcoDeMercancias(String tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
         super(motor, eslora, manga, nudos, peso);
         this.tiposMercancias = tiposMercancias;
     }
