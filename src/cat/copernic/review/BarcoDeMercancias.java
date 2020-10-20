@@ -56,11 +56,11 @@ public abstract class BarcoDeMercancias extends Barco {
      
     @Override
      public void abandonenElBarco() {
-        System.out.println("Tiren la mercancía al mar o saquen lo que puedan y salgan del barco");
+        System.out.println("Abandonen el barco asegurando la carga");
     }
      
     @Override
      public void comportamiento(){
-         System.out.println("Salven toda la mercancía posible");
+         System.out.println("Compórtense");
      }
 }
