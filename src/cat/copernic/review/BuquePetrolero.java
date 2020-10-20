@@ -37,9 +37,13 @@ public class BuquePetrolero extends BarcoDeMercancias{
         super.abandonenElBarco();
         System.out.println("\"Tomando medidas en marea negra\""); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public void comportamiento() {
+        super.comportamiento(); 
+        System.out.println("Nos roban! Defiendan la mercancía");//To change body of generated methods, choose Tools | Templates.
+    }
      
-     public void comportamiento(){
-         System.out.println("Defiendan los barriles, nos roban!");
-     }
+    
      
 }
