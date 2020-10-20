@@ -14,10 +14,11 @@ import java.util.Scanner;
  * @author User
  */
 public class PortaContenedores extends BarcoDeMercancias {
+   
     private int numeroContenedores;
 
-    public PortaContenedores(int numeroContenedores, String tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
-        super(tiposMercancias, motor, eslora, manga, nudos, peso);
+    public PortaContenedores(int numeroContenedores, String tiposMercancias, double capacidadCarga, Motor motor, double eslora, double manga, int nudos, int peso) {
+        super(tiposMercancias, capacidadCarga, motor, eslora, manga, nudos, peso);
         this.numeroContenedores = numeroContenedores;
     }
     
@@ -31,13 +32,5 @@ public class PortaContenedores extends BarcoDeMercancias {
         System.out.println("Atracando porta contenedores");
     }
     
-    public void abandonenElBarco(){
-        System.out.println("Hay un incendio en el barco, salven los contenedores posibles y abandonen el barco");
-    }
-    
-    public void comportamiento(){
-        System.out.println("Tiren la mercancía");
-    }
-    
-    
+     
 }
