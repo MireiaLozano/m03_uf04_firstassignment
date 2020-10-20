@@ -18,12 +18,14 @@ public class BuqueQuimico extends BarcoDeMercancias {
          private int tiposdeQuimicos;
          private String nombresTiposdeQuimicos;
 
-    public BuqueQuimico(int num_tanques, int tiposdeQuimicos, String nombresTiposdeQuimicos, int tiposMercancias, Motor motor, double eslora, double manga, int nudos, int peso) {
-        super(tiposMercancias, motor, eslora, manga, nudos, peso);
+    public BuqueQuimico(int num_tanques, int tiposdeQuimicos, String nombresTiposdeQuimicos, String tiposMercancias, double capacidadCarga, Motor motor, double eslora, double manga, int nudos, int peso) {
+        super(tiposMercancias, capacidadCarga, motor, eslora, manga, nudos, peso);
         this.num_tanques = num_tanques;
         this.tiposdeQuimicos = tiposdeQuimicos;
         this.nombresTiposdeQuimicos = nombresTiposdeQuimicos;
     }
+
+   
     
     @Override
     public void arranca(){
@@ -34,12 +36,10 @@ public class BuqueQuimico extends BarcoDeMercancias {
     public void atraca(){
         System.out.println("Atracando buque químico");
     }
-    
-    public void abandonenElBarco(){
-        System.out.println("Hay un incendio y la mercancía es frágil, todos fuera!");
-    }
-    
-    public void comportamiento(){
-        System.out.println("Ha habido un choque y los químicos pueden explotar");
+
+    @Override
+    public void abandonenElBarco() {
+        super.abandonenElBarco();
+        System.out.println("Hay un incendio y la mercancía es frágil, todos fuera!");//To change body of generated methods, choose Tools | Templates.
     }
 }
