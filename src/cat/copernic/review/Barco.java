@@ -13,8 +13,8 @@ import java.util.Scanner;
  *
  * @author User
  */
-public abstract class Barco {
-    protected String nombre= "Sin nombre";
+public abstract class Barco implements EnCasoDeAbordajeInterface, EnCasoDeIncendioInterface{
+    protected String nombre= "Mi barco";
     private Motor motor;
     private double eslora;
     private double manga;
