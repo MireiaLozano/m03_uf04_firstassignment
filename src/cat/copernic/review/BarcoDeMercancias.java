@@ -22,7 +22,31 @@ public abstract class BarcoDeMercancias extends Barco {
         this.tiposMercancias = tiposMercancias;
         this.capacidadCarga = capacidadCarga;
     }
-   
+
+    public String getTiposMercancias() {
+        return tiposMercancias;
+    }
+
+    public void setTiposMercancias(String tiposMercancias) {
+        this.tiposMercancias = tiposMercancias;
+    }
+
+    public double getCapacidadCarga() {
+        return capacidadCarga;
+    }
+
+    public void setCapacidadCarga(double capacidadCarga) {
+        this.capacidadCarga = capacidadCarga;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+      
     @Override
     public void arranca(){
         System.out.println("Arrancando barco de mercancias");
