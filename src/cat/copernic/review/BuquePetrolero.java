@@ -20,7 +20,8 @@ public class BuquePetrolero extends BarcoDeMercancias{
         super(tiposMercancias, capacidadCarga, motor, eslora, manga, nudos, peso);
         this.numeroBarriles = numeroBarriles;
     }
-            
+        
+       
     @Override
      public void arranca(){
          System.out.println("Arrancando buque de petroleo");
@@ -30,10 +31,12 @@ public class BuquePetrolero extends BarcoDeMercancias{
      public void atraca(){
          System.out.println("Atracando buque de petroleo");
      }
-     
-     public void abandonenElBarco(){
-         System.out.println("Abandonen rápidamente el barco");
-     }
+
+    @Override
+    public void abandonenElBarco() {
+        super.abandonenElBarco();
+        System.out.println("\"Tomando medidas en marea negra\""); //To change body of generated methods, choose Tools | Templates.
+    }
      
      public void comportamiento(){
          System.out.println("Defiendan los barriles, nos roban!");
